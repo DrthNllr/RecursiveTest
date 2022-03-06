@@ -1,6 +1,6 @@
-using RecursiveTest.Services;
+using ControlPlaza.Services;
 
-namespace RecursiveTest.BLL
+namespace ControlPlaza.BLL
 {
     public static class OperationsFactory
     {

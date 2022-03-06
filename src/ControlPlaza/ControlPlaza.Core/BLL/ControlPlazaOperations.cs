@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using RecursiveTest.Entities;
-using RecursiveTest.Services;
-using RecursiveTest.DAL;
+using ControlPlaza.Entities;
+using ControlPlaza.Services;
+using ControlPlaza.DAL;
 
-namespace RecursiveTest.BLL
+namespace ControlPlaza.BLL
 {
     public class ControlPlazaOperations : IControlPlazaOperations
     {

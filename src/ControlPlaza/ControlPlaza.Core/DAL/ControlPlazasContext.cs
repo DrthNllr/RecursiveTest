@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using RecursiveTest.Entities;
-using RecursiveTest.Helpers;
+using ControlPlaza.Entities;
+using ControlPlaza.Helpers;
 
-namespace RecursiveTest.DAL
+namespace ControlPlaza.DAL
 {
     public partial class ControlPlazasContext : DbContext
     {

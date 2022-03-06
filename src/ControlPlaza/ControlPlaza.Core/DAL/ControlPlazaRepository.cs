@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using RecursiveTest.Entities;
-using RecursiveTest.Services;
+using ControlPlaza.Entities;
+using ControlPlaza.Services;
 
-namespace RecursiveTest.DAL
+namespace ControlPlaza.DAL
 {
     public class ControlPlazaRepository : IControlPlazaRepository, IDisposable
     {

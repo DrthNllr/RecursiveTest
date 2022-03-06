@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RecursiveTest.Entities
+namespace ControlPlaza.Entities
 {
     public partial class Plaza
     {

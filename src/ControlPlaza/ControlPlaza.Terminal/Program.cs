@@ -1,8 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using RecursiveTest;
-using RecursiveTest.BLL;
-using RecursiveTest.DAL;
-using RecursiveTest.Entities;
+using ControlPlaza.BLL;
+using ControlPlaza.DAL;
+
+using System;
+
+
 
 ControlPlazasContext miContext = new ControlPlazasContext();
 var plazaOperations = OperationsFactory.GetControlPlazaOperations();

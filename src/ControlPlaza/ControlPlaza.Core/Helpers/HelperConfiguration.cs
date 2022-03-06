@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace RecursiveTest.Helpers
+namespace ControlPlaza.Helpers
 {
     public static class HelperConfiguration
     {

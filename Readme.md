@@ -48,11 +48,11 @@ El comando para el scaffolding es
 dotnet ef dbcontext scaffold "Server=servidorIp;Database=ControlPlazas;User Id=usuarioBD;Password=password" Microsoft.EntityFrameworkCore.SqlServer
 ```
 
-La entidad obtenida por ingeniería inversa se encuentra en Entities/Plaza.cs. El dbContext se encuentra en ControlPlazasContext.cs.
+La entidad obtenida por ingeniería inversa se encuentra en Entities/Plaza.cs. El dbContext se encuentra en DAL/ControlPlazasContext.cs.
 
 Al dbContext se le modificó la cadena de conexión para que la tome a través de HelperConfiguration.GetAppConfiguration() una vez generada por ingeniería inversa.
 
-Se forza la carga de entidades recursivas mediante Explicit Load en la clase RecursiveTest.DAL.ControlPlazaRepository. 
+Se forza la carga de entidades recursivas mediante Explicit Load en la clase ControlPlaza.DAL.ControlPlazaRepository. 
 
 ```C#
     public Plaza? RetrievePlazaById(Guid Id)

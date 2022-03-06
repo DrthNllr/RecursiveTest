@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using RecursiveTest.Services;
+using ControlPlaza.Services;
 
-namespace RecursiveTest.DAL
+namespace ControlPlaza.DAL
 {
     public static class ControlPlazaRepositoryFactory
     {
