@@ -9,5 +9,6 @@ namespace ControlPlaza.Services
     public interface IControlPlazaOperations
     {
         Plaza? RetrieveById(Guid Id);
+        Plaza? RetrieveById(String Id);
     }
 }

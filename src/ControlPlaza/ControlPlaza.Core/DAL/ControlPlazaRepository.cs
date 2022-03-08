@@ -21,7 +21,7 @@ namespace ControlPlaza.DAL
         public Plaza? RetrievePlazaById(Guid Id)
         {
             Plaza? plaza = context.Plazas
-                .Single(p => p.Id == Id);
+                .SingleOrDefault(p => p.Id == Id);
             //Se indica la carga explícita de las plazas de origen
             var plazasOrigen = context.Plazas.ToList();
             return plaza;

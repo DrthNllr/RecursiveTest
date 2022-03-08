@@ -28,13 +28,9 @@ namespace ControlPlaza.API.Controllers
         [HttpGet("{id}")]
         public IActionResult ById(string id)
         {
-            Guid plazaId;
-            if (Guid.TryParse(id, out plazaId) && plazaId != null)
-            {
-                Plaza plaza = helper.RetrieveById(plazaId);
-                return Ok(plaza);
-            }
-            return NotFound();
+
+            Plaza plaza = helper.RetrieveById(id);
+            return plaza != null ? Ok(plaza) : NotFound();
 
         }
     }

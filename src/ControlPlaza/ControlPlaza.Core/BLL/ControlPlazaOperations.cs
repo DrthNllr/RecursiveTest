@@ -19,5 +19,16 @@ namespace ControlPlaza.BLL
             }
             return plaza;
         }
+
+        public Plaza? RetrieveById(String Id)
+        {
+            Guid miId = Guid.Empty;
+            Plaza? plaza = null;
+            if (Guid.TryParse(Id, out miId))
+            {
+                plaza = this.RetrieveById(miId);
+            }
+            return plaza;
+        }
     }
 }
